@@ -1,0 +1,72 @@
+/*estilização geral*/
+
+/*.cinzel-texto{
+  font-family: "Cinzel", serif;
+  font-optical-sizing: auto;
+  font-weight: 400px;
+  font-style: normal;
+}*/
+
+body{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-top: 75px; /* a nav é fixed-top, então o conteúdo precisa de espaço abaixo dela */
+}
+
+#logo{
+    width: 75px;
+    margin-right: 10px;
+}
+
+.row{
+    margin: 0;
+}
+
+.container{
+    padding: 70px 0;
+}
+
+p, li{
+    color: #3D2522;
+    font-size: 14px;
+}
+
+/*barra de navegação*/
+.navbar{
+    background-color: #cfb89f;
+}
+
+#nav-container{
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+#logo{
+    width: 75px;
+}
+
+.navbar-brand{
+    display: flex;
+    align-items: center;
+    padding: 0;
+    color: brown;
+    text-decoration: none;
+}
+
+.navbar-brand:hover{
+    color: #FFB4E1;
+}
+
+#navbar-links a{
+    color: brown;
+    text-decoration: none;
+}
+
+#navbar-links a:hover{
+    color: #FFB4E1;
+    text-decoration: none;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link{
+    padding: 1rem .8rem;
+}
+
