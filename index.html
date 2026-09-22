@@ -6,7 +6,7 @@
         <!--<link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">-->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
         <link rel="stylesheet" href="style.css">
         <title>Portfólio - Raquel Castilheiro</title>
         
@@ -16,35 +16,179 @@
         <!--<style>
             @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap');
         </style> -->
+
         <!--atributo aria e descrição para acessibilidade-->
 
         <header>
-            <div class="container" id="nav-container">
-                <nav class="navbar navbar-expand-lg fixed-top">
-                    <a href="#" class="navbar-brand">
-                        <img id="logo" src="img/logo_portifolio.png" alt="logo portifolio">Meu Portfólio
+            <nav class="navbar navbar-expand-lg fixed-top">
+                <div class="container" id="nav-container">
+                    <a href="#inicio" class="navbar-brand">
+                        <img id="logo" src="img/logo_portfolio.png" alt="logo portfolio">Meu Portfólio
                     </a>
 
-                    <button class="navbar-toggler" type="button" data-toggle = "collapse" data-target="#navbar-links" aria-controls="navbar-links" aria-expanded="false" aria-label="toggle navigation">
+                    <button class="navbar-toggler" type="button" data-bs-toggle = "collapse" data-bs-target="#navbar-links" aria-controls="navbar-links" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
 
                     <div class="collapse navbar-collapse justify-content-end" id="navbar-links">
                         <div class="navbar-nav">
-                            <a class="nav-item nav-link" id="aboutMe-menu" href="#">Sobre Mim</a>
-                            <a class="nav-item nav-link" id="home-menu" href="#">Início</a>
-                            <a class="nav-item nav-link" id="education-menu" href="#">Formação</a>
-                            <a class="nav-item nav-link" id="projects-menu" href="#">Projetos</a>
-                            <a class="nav-item nav-link" id="myLife-menu" href="#">Além do Código</a>
-                            <a class="nav-item nav-link" id="contact-menu" href="#">Contato</a>
+                            <a class="nav-link" id="inicio-menu" href="#inicio">Início</a>
+                            <a class="nav-link" id="sobreMim-menu" href="#sobre">Sobre Mim</a>
+                            <a class="nav-link" id="formacao-menu" href="#formacao">Formação</a>
+                            <a class="nav-link" id="projetos-menu" href="#projetos">Projetos</a>
+                            <a class="nav-link" id="minhaVida-menu" href="#minhaVida">Além do Código</a>
+                            <a class="nav-link" id="contato-menu" href="#contato">Contato</a>
                         </div>
 
                     </div>
-                </nav>
-            </div>
+                </div>
+            </nav>
         </header>
 
-        <!-- exemplo estrutura "início"
+        <main>
+            <section id="inicio">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-7">
+                            <h1>Olá, eu sou a Raquel!</h1>
+                            <p>Estudando no presente para contribuir para o futuro.</p>
+                            <p>Sou estudante de tecnologia e estou construindo minha trajetória na área de desenvolvimento.</p>
+                        </div>
+
+                        <div class="col-md-5">
+                            <img src="img/foto-portfolio2.jpeg" class="img-fluid" style="width: 300px;" alt="Foto da criadora do site">
+                        </div>
+                        
+                        <a class="btn btn-outline-dark col-md-2" href="#projetos" role="button">Ver Projetos</a>
+                    </div>
+                </div>
+            </section>
+
+            <section id="sobre-mim" class="sobre">
+                <div class="container">
+                    <div class="row">
+                        <div class="card col-md-6">
+                            <div class="card-body">
+                                <p>19 anos • Ribeirão Preto, SP</p>
+                                <p>Estudante de Análise e Desenvolvimento de Sistemas</p>
+                            </div>
+                        </div>
+
+                        <p>Sou estudante de Análise e Desenvolvimento de Sistemas e venho construindo minha 
+                            trajetória em tecnologia desde o curso técnico realizado no SENAI, integrado ao 
+                            Ensino Médio no SESI. Atualmente, continuo minha formação no Curso Superior de 
+                            Tecnologia em Análise e Desenvolvimento de Sistemas.</p>
+
+                        <p>Tenho especial interesse pela aplicação da tecnologia na indústria e pelo 
+                            desenvolvimento de soluções que sejam capazes de gerar resultados reais. 
+                            Gosto de compreender não apenas como uma solução é construída, mas também 
+                            o problema que ela busca resolver e o impacto que pode produzir.</p>
+
+                        <div class="col-sm-6">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">JAVA</h5>
+                                    <p class="card-text">Tenho um carinho especial por Java, por ter sido a 
+                                        primeira linguagem de programação que aprendi durante o curso técnico.</p>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">PYTHON</h5>
+                                    <p class="card-text">Também aprecio Python pela sua versatilidade e 
+                                        pela amplitude de possibilidades que oferece.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card col-md-3">
+                            <div class="card-body">
+                                <p>• Planejamento<br>• Organização<br>• Equipe</p>
+                            </div>
+                        </div>
+
+                        <p class="col-md-9">Valorizo o trabalho em equipe, o planejamento e a organização. Gosto de acompanhar 
+                            as atividades em desenvolvimento, compreender o andamento dos projetos e contribuir 
+                            para que as etapas sejam realizadas de maneira estruturada.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="formacao" class="formacao">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="card">
+                                <img class="card-img-top" src="img/paleta_portfolio.png" alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title">Ensino Médio + Técnico</h5>
+                                    <p class="card-text">Ensino Médio integrado ao Técnico em Análise e 
+                                        Desenvolvimento de Sistemas <br><span class="badge rounded-pill bg-danger">SESI + SENAI</span></p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-6">
+                            <div class="card">
+                                <img class="card-img-top" src="img/paleta_portfolio.png" alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title">Formação em andamento</h5>
+                                    <p class="card-text">Curso Superior de Tecnologia em Análise e 
+                                        Desenvolvimento de Sistemas <br><span class="badge rounded-pill bg-danger">SENAI</span></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Linguagens</h5>
+                                <span class="badge rounded-pill bg-secondary">Python</span>
+                                <span class="badge rounded-pill bg-secondary">Java</span>
+                                <span class="badge rounded-pill bg-secondary">C#</span>
+                                <span class="badge rounded-pill bg-secondary">Dart</span>
+                                <span class="badge rounded-pill bg-secondary">JavaScript</span>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Desenvolvimento Web</h5>
+                                <span class="badge rounded-pill bg-secondary">Python</span>
+                                <span class="badge rounded-pill bg-secondary">Java</span>
+                                <span class="badge rounded-pill bg-secondary">C#</span>
+                                <span class="badge rounded-pill bg-secondary">Dart</span>
+                                <span class="badge rounded-pill bg-secondary">JavaScript</span>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Banco de dados</h5>
+                                <span class="badge rounded-pill bg-secondary">Python</span>
+                                <span class="badge rounded-pill bg-secondary">Java</span>
+                                <span class="badge rounded-pill bg-secondary">C#</span>
+                                <span class="badge rounded-pill bg-secondary">Dart</span>
+                                <span class="badge rounded-pill bg-secondary">JavaScript</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrW/VvE9B2Fz3QfR7qT1lD4D6"
+                crossorigin="anonymous">
+        </script>
+    </body>
+</html>
+
+
+<!-- exemplo estrutura "início"
         <div class="row align-items-center">
             <div class="col-md-7">
                 ...
@@ -126,9 +270,3 @@
     </div>
 
 </div>-->
-    
-
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
-</body>
-</html>
