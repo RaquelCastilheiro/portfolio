@@ -1,72 +1,250 @@
-/*estilização geral*/
-
-/*.cinzel-texto{
-  font-family: "Cinzel", serif;
-  font-optical-sizing: auto;
-  font-weight: 400px;
-  font-style: normal;
-}*/
-
-body{
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    padding-top: 75px; /* a nav é fixed-top, então o conteúdo precisa de espaço abaixo dela */
+/*geral*/
+body {
+    font-family: "Quattrocento", serif;
+    padding-top: 75px;
+    color: #3D2522;
 }
 
-#logo{
-    width: 75px;
-    margin-right: 10px;
+h1,h2,h3,h4,h5 {
+    font-family: "Cinzel", Georgia, serif;
 }
 
-.row{
-    margin: 0;
-}
-
-.container{
-    padding: 70px 0;
-}
-
-p, li{
+p,li {
     color: #3D2522;
     font-size: 17px;
 }
 
-/*barra de navegação*/
-.navbar{
-    background-color: #cfb89f;
+section h2 {
+    margin-bottom: 30px;
+    color: #3D2522;
 }
 
-#nav-container{
+/*navbar*/
+
+.navbar {
+    background-color: #CFB89F;
+}
+
+#nav-container {
     padding-top: 0;
     padding-bottom: 0;
 }
 
-#logo{
+#logo {
     width: 75px;
+    margin-right: 10px;
 }
 
-.navbar-brand{
+.navbar-brand {
+    color: #3D0F0F;
+}
+
+/*.navbar-brand:hover {
+    color: #A51C30;
+}*/
+
+#navbar-links a {
+    color: #3D0F0F;
+}
+
+#navbar-links a:hover {
+    color: #FFD2ED;
+}
+
+
+.hover-underline {
+    position: relative;
+}
+
+.hover-underline::after,
+.hover-underline::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(
+        to right,
+        #FFD2ED,
+        #FFA9DD
+    );
+    left: 0;
+    transform: scaleX(0);
+    transition: transform 0.4s ease-out;
+}
+
+.hover-underline::after {
+    bottom: -5px;
+    transform-origin: right;
+}
+
+.hover-underline::before {
+    top: -5px;
+    transform-origin: left;
+}
+
+.hover-underline:hover::after,
+.hover-underline:hover::before {
+    transform: scaleX(1);
+}
+
+
+/*início*/
+
+#inicio h1 {
+    margin-bottom: 20px;
+}
+
+
+/*cor seção*/
+
+#sobre, #projetos, #contato {
+    background-color: #FAF8F5;
+}
+
+#formacao{
+    background-color: #ffffff;
+}
+
+
+
+
+/*cards*/
+#sobre .card,
+#formacao .card,
+.projeto-card {
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease,
+        border-color 0.2s ease;
+}
+
+#sobre .card:hover,
+#formacao .card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 5px 15px #3d25221f;
+    border-color: #3D2522;
+}
+
+.projeto-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 5px 15px #3d25221f;
+    border-color: #FFB4E1;
+}
+
+
+/*formação*/
+
+#formacao .card-img-top {
+    max-height: 210px;
+    object-fit: cover;
+}
+
+
+/*trabalho equipe*/
+
+.forma-trabalho {
+    border-left: 5px solid #CFB89F;
+    background-color: #FAF8F5;
+}
+
+.forma-trabalho .badge {
+    background-color: #CFB89F;
+    color: #3D2522;
+}
+
+
+/*projetos*/
+
+.projeto-card .card-img-top {
+    height: 200px;
+    object-fit: cover;
+    object-position: top;
+}
+
+
+/*hobbies*/
+
+.hobby-box {
+    border: 1px solid #CFB89F;
+    background-color: #FAF8F5;
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.hobby-box:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 5px 15px #3d25221a;
+}
+
+.hobby-icon {
+    font-size: 2rem;
+    color: #3D2522;
+}
+
+.hobby-box h4 {
+    color: #3D2522;
+}
+
+.hobby-principal {
+    background-color: #CFB89F;
+    border-color: #CFB89F;
+}
+
+
+/*contato*/
+
+.link-social {
     display: flex;
     align-items: center;
-    padding: 0;
-    color: brown;
+    gap: 12px;
+
+    padding: 12px 0;
+
+    color: #3D2522;
+    text-decoration: none;
+
+    border-bottom: 1px solid #EEE;
+
+    transition:
+        color 0.2s ease,
+        transform 0.2s ease;
+}
+
+.link-social:last-child {
+    border-bottom: none;
+}
+
+.link-social i {
+    font-size: 1.4rem;
+}
+
+.link-social:hover {
+    color: #A51C30;
+    transform: translateX(4px);
+}
+
+
+/*rodapé*/
+
+footer {
+    background-color: #3D2522;
+}
+
+footer p,
+.footer-email {
+    color: #CFB89F;
+}
+
+.footer-email {
     text-decoration: none;
 }
 
-.navbar-brand:hover{
+.footer-email:hover {
     color: #FFB4E1;
 }
 
-#navbar-links a{
-    color: brown;
-    text-decoration: none;
+.footer-email i {
+    margin-right: 6px;
 }
-
-#navbar-links a:hover{
-    color: #FFB4E1;
-    text-decoration: none;
-}
-
-.navbar-expand-lg .navbar-nav .nav-link{
-    padding: 1rem .8rem;
-}
-
